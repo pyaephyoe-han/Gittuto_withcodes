@@ -1,7 +1,4 @@
-// script.js v1
-// Basic JavaScript interaction
-
-function showMessage() {
-    const msg = document.getElementById("msg");
-    msg.textContent = "Hello! JavaScript is working (v1)";
+function buyCar(carName) {
+    alert("You selected: " + carName + "\nOur sales team will contact you!");
 }
+
