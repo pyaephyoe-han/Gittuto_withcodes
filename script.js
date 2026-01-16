@@ -1,4 +1,4 @@
-function buyCar(carName) {
-    alert("You selected: " + carName + "\nOur sales team will contact you!");
+function scrollToCars() {
+    document.getElementById("cars").scrollIntoView({ behavior: "smooth" });
 }
 
