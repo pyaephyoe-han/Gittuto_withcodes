@@ -2,46 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Car Showroom</title>
+    <title>Luxury Car Showroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Luxury Car Showroom</h1>
-    <p>Find Your Dream Car</p>
-</header>
+    <!-- Header -->
+    <header class="header">
+        <h1>Luxury Car Showroom</h1>
+        <p>Find Your Dream Car Today</p>
+    </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Cars</a>
-    <a href="#">Contact</a>
-</nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<section class="cars">
-    <div class="car">
-        <h2>BMW M5</h2>
-        <p>Price: $80,000</p>
-        <button onclick="buyCar('BMW M5')">Buy Now</button>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Premium & Sports Cars</h2>
+        <p>Best deals • Trusted showroom • Quality service</p>
+        <button onclick="scrollToCars()">View Cars</button>
+    </section>
 
-    <div class="car">
-        <h2>Audi A6</h2>
-        <p>Price: $70,000</p>
-        <button onclick="buyCar('Audi A6')">Buy Now</button>
-    </div>
+    <!-- Cars Section -->
+    <section class="cars" id="cars">
+        <h2 class="section-title">Available Cars</h2>
 
-    <div class="car">
-        <h2>Tesla Model S</h2>
-        <p>Price: $90,000</p>
-        <button onclick="buyCar('Tesla Model S')">Buy Now</button>
-    </div>
-</section>
+        <div class="car-list">
+            <div class="car">
+                <h3>BMW M5</h3>
+                <p>Price: $80,000</p>
+                <button onclick="buyCar('BMW M5')">Buy Now</button>
+            </div>
 
-<footer>
-    <p>© 2026 Car Showroom. All rights reserved.</p>
-</footer>
+            <div class="car">
+                <h3>Audi A6</h3>
+                <p>Price: $70,000</p>
+                <button onclick="buyCar('Audi A6')">Buy Now</button>
+            </div>
 
-<script src="script.js"></script>
+            <div class="car">
+                <h3>Tesla Model S</h3>
+                <p>Price: $90,000</p>
+                <button onclick="buyCar('Tesla Model S')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: sales@carshowroom.com</p>
+        <p>Phone: +95 9 123 456 789</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Luxury Car Showroom. All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
+
